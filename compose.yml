@@ -1,8 +1,9 @@
-version: '3.8'
+name: web-server
 
 services:
   web:
     image: httpd:latest
+    container_name: apache-srv
     ports:
       - "8080:80"
     volumes:
